@@ -9,12 +9,9 @@
 // Use console.log to output the following criteria:
 
 // How many of each grade?
-// What is the lowest grade?
-// What is the highest grade?
-
 
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
-// var scores = scores.sort(function(a, b){return a - b ;});
+var scores = scores.sort(function(a, b){return a - b ;});
 
 var gradeA = 0;
 var gradeB = 0;
@@ -52,3 +49,20 @@ console.log("Number of Bs:", gradeB);
 console.log("Number of Cs:", gradeC);
 console.log("Number of Ds:", gradeD);
 console.log("Number of Fs:", gradeF);
+
+// What is the lowest grade?
+
+scores.min = function(scores) {
+	return Math.min.apply( Math, scores)
+}
+var lowGrade = scores.min(scores)
+console.log("Lowest Grade: ", lowGrade)
+
+// What is the highest grade?
+
+scores.max = function(scores) {
+	return Math.max.apply( Math, scores)
+}
+var hiGrade = scores.max(scores)
+console.log("Highest Grade: ", hiGrade)
+
