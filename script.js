@@ -43,12 +43,12 @@ var grade = [ ];
 	}
 }
 
-console.log("grade letter", grade);
-console.log("Number of As:", gradeA);
-console.log("Number of Bs:", gradeB);
-console.log("Number of Cs:", gradeC);
-console.log("Number of Ds:", gradeD);
-console.log("Number of Fs:", gradeF);
+// console.log("grade letter", grade);
+// console.log("Number of As:", gradeA);
+// console.log("Number of Bs:", gradeB);
+// console.log("Number of Cs:", gradeC);
+// console.log("Number of Ds:", gradeD);
+// console.log("Number of Fs:", gradeF);
 
 // What is the lowest grade?
 
@@ -56,7 +56,7 @@ scores.min = function(scores) {
 	return Math.min.apply( Math, scores)
 }
 var lowGrade = scores.min(scores)
-console.log("Lowest Grade: ", lowGrade)
+// console.log("Lowest Grade: ", lowGrade)
 
 // What is the highest grade?
 
@@ -64,5 +64,5 @@ scores.max = function(scores) {
 	return Math.max.apply( Math, scores)
 }
 var hiGrade = scores.max(scores)
-console.log("Highest Grade: ", hiGrade)
+// console.log("Highest Grade: ", hiGrade)
 
